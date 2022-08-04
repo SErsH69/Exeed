@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/speccard", {data:[{}],fetch:{},mutations:[["info\u002FsetPhone",void 0]]});

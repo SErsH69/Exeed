@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/spec", {data:[{}],fetch:{},mutations:[["info\u002FsetPhone",void 0]]});
