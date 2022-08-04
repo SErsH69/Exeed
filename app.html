@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html {{ HTML_ATTRS }}>
+	<head {{ HEAD_ATTRS }}>
+		{{ HEAD }}
+	</head>
+	<body {{ BODY_ATTRS }}>
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=UA-217428106-1"
+		></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
+
+			gtag("config", "UA-217428106-1");
+		</script>
+
+		{{ APP }}
+
+		<!-- Yandex.Metrika counter -->
+		<script type="text/javascript">
+			(function(m, e, t, r, i, k, a) {
+				m[i] =
+					m[i] ||
+					function() {
+						(m[i].a = m[i].a || []).push(arguments);
+					};
+				m[i].l = 1 * new Date();
+				(k = e.createElement(t)),
+					(a = e.getElementsByTagName(t)[0]),
+					(k.async = 1),
+					(k.src = r),
+					a.parentNode.insertBefore(k, a);
+			})(
+				window,
+				document,
+				"script",
+				"https://mc.yandex.ru/metrika/tag.js",
+				"ym"
+			);
+
+			ym(68955580, "init", {
+				clickmap: true,
+				trackLinks: true,
+				accurateTrackBounce: true,
+				webvisor: true
+			});
+		</script>
+		<noscript
+			><div>
+				<img
+					src="https://mc.yandex.ru/watch/68955580"
+					style="position: absolute; left: -9999px"
+					alt=""
+				/></div
+		></noscript>
+		<!-- /Yandex.Metrika counter -->
+
+		<!-- Yandex.Metrika counter -->
+		<script type="text/javascript">
+			(function(m, e, t, r, i, k, a) {
+				m[i] =
+					m[i] ||
+					function() {
+						(m[i].a = m[i].a || []).push(arguments);
+					};
+				m[i].l = 1 * new Date();
+				(k = e.createElement(t)),
+					(a = e.getElementsByTagName(t)[0]),
+					(k.async = 1),
+					(k.src = r),
+					a.parentNode.insertBefore(k, a);
+			})(
+				window,
+				document,
+				"script",
+				"https://mc.yandex.ru/metrika/tag.js",
+				"ym"
+			);
+
+			ym(88478156, "init", {
+				clickmap: true,
+				trackLinks: true,
+				accurateTrackBounce: true
+			});
+		</script>
+		<noscript
+			><div>
+				<img
+					src="https://mc.yandex.ru/watch/88478156"
+					style="position:absolute; left:-9999px;"
+					alt=""
+				/></div
+		></noscript>
+		<!-- /Yandex.Metrika counter -->
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=UA-183907662-1"
+		></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
+
+			gtag("config", "UA-183907662-1");
+		</script>
+
+		<!-- calltouch -->
+		<script type="text/javascript">
+			!(function(o, r, t) {
+				(o.CalltouchDataObject = "ct"),
+					(o.ct = function() {
+						o.ct.callbacks.push(arguments);
+					}),
+					o.ct.callbacks || (o.ct.callbacks = []),
+					(o.ct.loaded = !1),
+					(o.ct.counters = t = "object" != typeof t ? [t] : t);
+				for (var c = 0; c < t.length; c += 1)
+					!(function(t) {
+						function c() {
+							e.parentNode.insertBefore(n, e);
+						}
+						var e = r.getElementsByTagName("script")[0],
+							n = r.createElement("script"),
+							a =
+								"function" == typeof Array.prototype.find
+									? "init-min.js"
+									: "init.js";
+						(n.type = "text/javascript"),
+							(n.async = !0),
+							(n.src = "https://mod.calltouch.ru/" + a + "?id=" + t),
+							"[object Opera]" == o.opera
+								? r.addEventListener("DOMContentLoaded", c, !1)
+								: c();
+					})(t[c]);
+			})(window, document, "xwpbyss9");
+		</script>
+
+		<script>
+			window.addEventListener("DOMContentLoaded", function() {
+				Element.prototype.matches ||
+					(Element.prototype.matches =
+						Element.prototype.matchesSelector ||
+						Element.prototype.webkitMatchesSelector ||
+						Element.prototype.mozMatchesSelector ||
+						Element.prototype.msMatchesSelector),
+					Element.prototype.closest ||
+						(Element.prototype.closest = function(e) {
+							for (var t = this; t; ) {
+								if (t.matches(e)) return t;
+								t = t.parentElement;
+							}
+							return null;
+						});
+				document.addEventListener("click", function(e) {
+					if (e.target.closest('form button[type="button"]')) {
+						var f = e.target.closest("form");
+						if (!!f) {
+							var phone_ct = f.querySelector(
+								'input[placeholder="+7 (___) ___ - __ - __"]'
+							).value;
+							console.log(phone_ct);
+							phone_ct = phone_ct.replace(/[^0-9]/gim, "");
+							if (phone_ct != "") {
+								if (phone_ct[0] == "8") {
+									phone_ct = phone_ct.substring(1);
+								}
+								if (phone_ct[0] == "7") {
+									phone_ct = phone_ct.substring(1);
+								}
+								phone_ct = "7" + phone_ct;
+								window.ctw.createRequest("default", phone_ct, [], function(
+									success,
+									data
+								) {
+									console.log(success, data);
+								});
+							}
+						}
+					}
+				});
+			});
+		</script>
+		<!-- calltouch -->
+	</body>
+</html>

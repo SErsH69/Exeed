@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/txl2", {data:[{}],fetch:{},mutations:[["info\u002FsetPhone",void 0]]});

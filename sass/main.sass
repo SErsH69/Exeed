@@ -1,0 +1,161 @@
+@import 'fonts'
+@import 'vars'
+@import '~element-ui/packages/theme-chalk/src/index'
+*::-webkit-input-placeholder
+	color: transparentize($black, .4)
+	opacity: 1
+*:-moz-placeholder
+	color: transparentize($black, .4)
+	opacity: 1
+*::-moz-placeholder
+	color: transparentize($black, .4)
+	opacity: 1
+*:-ms-input-placeholder
+	color: transparentize($black, .4)
+	opacity: 1
+
+*::-ms-clear 
+	display: none
+
+*::-webkit-scrollbar
+	width: 8px
+*::-webkit-scrollbar-track
+	background: $black
+*::-webkit-scrollbar-thumb
+	background: $accent
+*
+	scrollbar-base-color: #ddd
+	scrollbar-face-color: $accent
+	scrollbar-3dlight-color: transparent
+	scrollbar-highlight-color: transparent
+	scrollbar-track-color: transparent
+	scrollbar-arrow-color: $accent
+	scrollbar-shadow-color: transparent
+	scrollbar-dark-shadow-color: transparent
+
+*::-moz-selection
+	color: $accent
+	background: $black
+*::selection
+	color: $accent
+	background: $black
+body
+	font-size: 16px	
+	position: relative
+	line-height: 1.2em
+	font-family: $font
+	overflow-x: hidden	
+	color: $black  
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto  
+*
+	margin: 0
+	padding: 0  
+	box-sizing: border-box
+a
+	transition: 0.3s cubic-bezier(1,1,.44,.92)
+	color: $accent
+	appearance: none
+	outline: none
+	outline-width: 0
+	user-select: none
+	&:hover
+		color: $accent
+.container
+	margin: 0 auto
+	width: 88%
+	display: flex
+	flex-wrap: wrap
+.el-button
+	font-weight: 600
+	font-size: 11px
+	letter-spacing: 2px
+	text-transform: uppercase
+	height: 50px
+	color: #fff
+	font-family: $font	
+	padding: 15px 60px 15px 30px
+	background-color: transparent
+	border-radius: 0
+	background-image: url('@/assets/img/chevrone.svg')
+	background-size: 10px
+	background-repeat: no-repeat
+	background-position: 90% center
+	&:hover,
+	&:active,
+	&:focus
+		color: $black
+	&.black-btn
+		border-color: $black
+		color: $black
+	&.dark-btn
+		border-color: $dark
+		background-color: $dark
+		color: #fff
+		&:hover
+			background-color: $accent
+	&.light-btn		
+		color: $black
+		background-color: #fff
+	&.detailBtn
+		background-image: url('@/assets/img/plus.svg')
+		background-size: 17px		
+.el-input__inner		
+	height: 50px
+	line-height: 50px
+	font-size: 14px
+	font-family: $font
+	font-weight: 500	
+	letter-spacing: 2px
+	color: $graylight
+	border: 1px solid $gray
+	background: rgba(255, 255, 255, 0.1)
+	padding: 0 16px	
+	border-radius: 0
+.el-dialog
+	background-color: $dark
+	color: #fff
+.el-select-dropdown	
+	border: none!important
+.el-collapse
+	margin-top: 40px
+	border: none
+.el-collapse-item__header
+	background: transparent
+	font-size: 16px
+	line-height: 1.2em
+	color: $dark
+	font-weight: 600
+	height: 58px
+	&.is-active
+		color: $accent
+		font-weight: bold
+.el-collapse-item__arrow
+	margin: 0px 0px 0px 10px
+	color: $accent
+	font-size: 18px
+.el-collapse-item__wrap
+	background: transparent
+	border-color: #dedede
+.el-collapse-item__header
+	border-color: #dedede
+.el-collapse.dark .el-collapse-item__header,
+.el-collapse.dark .el-collapse-item__wrap
+	color: #fff
+	border-color: rgba(255,255,255, .2)
+.el-collapse.dark	.el-collapse-item__content
+	color: #fff
+.el-collapse.dark .el-collapse-item__header.is-active
+	border-bottom-color: transparent
+@include notebook
+	.el-collapse-item__header
+		font-size: 14px
+		height: 50px
+@include sm-tablets
+	.el-button
+		font-size: 9px
+		height: 40px
+		padding: 11px 48px 11px 20px
+		background-size: 8px
