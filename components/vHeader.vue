@@ -20,7 +20,7 @@
 				<nuxt-link to="/txl">TXL</nuxt-link>
 				<nuxt-link to="/txl2">TXL 2.0</nuxt-link>
 				<nuxt-link to="/vx">VX</nuxt-link>
-				<nuxt-link to="/spec">Спецпредложения</nuxt-link>
+				<nuxt-link to="/offers">Спецпредложения</nuxt-link>
 				<a
 					href="#"
 					class="carPage-header__link"

@@ -12,7 +12,7 @@
                 <div class="spec_block__info">
                     <div class="spec_block__tit">УВЛЕКАТЕЛЬНОЕ ПУТЕШЕСТВИЕ С EXEED</div>
                     <div class="spec_block__subtit">Получи привилегии EXEED при обращении на сервис</div>
-                    <a href="/speccard" class="spec_block__link">узнать больше</a>
+                    <a href="/exciting-journey-with-exceed" class="spec_block__link">узнать больше</a>
                 </div>
             </div>
         </div>
